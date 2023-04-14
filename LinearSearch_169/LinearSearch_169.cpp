@@ -27,6 +27,32 @@ void input()
         cin >> arr[i];
     }
 }
+
+void LinearSearch()
+{
+    char ch;
+    int comparison; //Number of comparison
+
+    do
+    {
+        //Accept the number of comparison
+        cout << "\nEnter the element you want to search: ";     //Langkah 1
+        int item;
+        cin >> item;
+
+        comparison = 0;
+        for (i = 0; i < n; i++)                             //Langkah 2,3,4
+        {
+            comparison++;
+            if (arr[i] == item)                       //Langkah 5 a found
+            {
+                cout << "\n" << item << " Found at position " << (i + 1) << endl;
+                break;
+            }
+        }
+    }
+}
+
 int main()
 {
     
